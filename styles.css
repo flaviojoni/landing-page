@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
+
+:root {
+    --orange: #FFD263;
+    --roxo: #2D243E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--roxo);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+/* NAVBAR */
+#header {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--roxo);
+}
+
+.navbar {
+    background-color: var(--orange);
+    padding: 0.5rem 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar li {
+    margin-right: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.navbar a:focus-visible, .navbar a:hover {
+    border-bottom: 1px solid #000;
+}
+
+/* SECTION 1 */
+.text-icons {
+    text-align: center;
+    color: var(--orange);
+    margin-top: 1rem;
+}
+
+.text-icons h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.h2-sec1 {
+    font-size: 1.325rem;
+    margin-bottom: 10px;
+}
+
+.icons {
+    font-size: 72px;
+    color: #fff;
+}
+
+.img-section {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* SECTION CARDS*/
+.card {
+    width: 325px;
+    height: 275px;
+    background-color: var(--orange);
+    margin: 1rem auto;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.text-card {
+    margin-top: 1.325rem;
+}
+
+.card p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* DEPOIMENTS */
+.depo {
+    width: 300px;
+    background-color: var(--orange);
+    padding: 2rem 1rem;
+    border-radius: 5px;
+}
+
+.depo img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.depo h3 {
+    margin: 0.7rem 0;
+}
+
+.depo p {
+    font-size: 1rem;
+}
+
+.section-4 h2 {
+    font-size: 2rem;
+    margin: 0.6rem 0;
+    color: var(--orange);
+}
+
+/* NEWS */
+.form {
+    margin: 0 auto;
+}
+
+.form h2 {
+    color: var(--orange);
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.form input[type='email'] {
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.form input[type='email']::placeholder {
+    text-transform: uppercase;
+}
+
+#submit {
+    display: block;
+    margin: 10px auto 0 auto;
+    background-color: var(--roxo);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: #fff;
+}
+
+.main-form {
+    background-color: var(--orange);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+video {
+    border: 1px solid var(--orange);
+    border-radius: 30px;
+    display: block;
+    margin: 30px auto;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--orange);
+    padding: 50px;
+}
+
+.i-footer i {
+    font-size: 2rem;
+    padding: 5px 0;
+    color: var(--roxo); 
+}
+
+.links a {
+    font-size: 1.3rem;
+    padding: 5px 0;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+}
+
+.links a:focus {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+/* Utilities */
+section {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-rows: auto;
+}
+
+.grid-card {
+    display: grid;
+    align-items: center;
+    grid-template-rows: auto;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.grid-c {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-f {
+    display: grid;
+    justify-items: center;
+}
+
+.grid-i {
+    display: grid;
+    align-items: center;
+    grid-template-rows: auto;
+}
+
+/* MEDIAS */
+@media only screen and (min-width: 800px) {
+    .grid {
+        grid-template-rows: 1;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        margin: 1rem 1rem;
+    }
+
+    .img-section {
+        max-width: 420px;
+    }
+
+    section {
+        margin: 3rem auto;
+    }
+
+    .text-icons {
+        margin-right: 50px;
+    }
+
+    .depo {
+        margin-right: 1rem;
+    }
+
+    .video {
+        margin-right: 30px;
+    }
+
+    .text {
+        margin-left: 50px;
+    }
+
+    .img-sec1 {
+        margin-right: 170px;
+    }
+
+    .grid-i {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .i-footer i {
+        font-size: 4rem;
+        padding: 10px;
+    }
+}
